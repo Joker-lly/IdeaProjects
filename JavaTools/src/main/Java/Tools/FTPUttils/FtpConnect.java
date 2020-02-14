@@ -1,4 +1,4 @@
-package FTPUttils;
+package Tools.FTPUttils;
 
 import java.io.File;
 

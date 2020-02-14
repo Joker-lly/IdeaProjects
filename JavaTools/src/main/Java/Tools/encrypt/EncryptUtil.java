@@ -1,4 +1,4 @@
-package encrypt;
+package Tools.encrypt;
 
 import java.io.UnsupportedEncodingException;
 import java.security.MessageDigest;

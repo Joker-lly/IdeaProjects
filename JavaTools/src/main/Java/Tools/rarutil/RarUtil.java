@@ -1,4 +1,4 @@
-package rarutil;
+package Tools.rarutil;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -9,8 +9,6 @@ import java.io.InputStreamReader;
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.Properties;
-
-
 
 
 /**

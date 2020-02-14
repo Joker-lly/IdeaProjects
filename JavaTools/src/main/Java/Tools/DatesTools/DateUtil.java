@@ -1,4 +1,4 @@
-package DatesTools;
+package Tools.DatesTools;
 
 import java.text.DateFormat;
 import java.text.ParseException;
