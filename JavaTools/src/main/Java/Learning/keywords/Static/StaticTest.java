@@ -1,4 +1,4 @@
-package Learning.Static;
+package Learning.keywords.Static;
 //import static 使用案例，引入后就可以使用该类中的所有静态资源，在jdk1.5之后的一个特性
 //import static com.lly.need.StaticNeeds.*;
 /**
