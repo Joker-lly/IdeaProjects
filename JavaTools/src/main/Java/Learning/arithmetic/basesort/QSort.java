@@ -1,5 +1,8 @@
 package Learning.arithmetic.basesort;
 
+/**
+ * 快速排序
+ */
 public class QSort {
 
 	public static void qSort(int data[], int left, int right) {
@@ -9,13 +12,15 @@ public class QSort {
 		int base = data[left]; // 取第一个作为基准数
 
 		//Sort
-		
+		//int data[] = { 45, 28, 80, 90, 50, 16, 100, 10 };
+
 		// 1 2 3 4 5
 		while (ll < rr) {
 			// 从后面往前找到比基准数小的数进行对换
 			while (ll < rr && data[rr] >= base) {
 				rr--;
 			}
+			//跳出循环，代从后往前找到了比基数小的数字，然后交换位置
 			if (ll < rr) { // 为了怕是 没找到
 				int temp = data[rr];
 				data[rr] = data[ll];
