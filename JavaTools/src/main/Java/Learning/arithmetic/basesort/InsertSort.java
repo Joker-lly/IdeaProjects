@@ -2,6 +2,9 @@ package Learning.arithmetic.basesort;
 
 import java.util.Scanner;
 
+/**
+ * 插入排序
+ */
 public class InsertSort {
 
 	public static void main(String[] args) {
@@ -12,10 +15,10 @@ public class InsertSort {
 		// 第四部步: 1 2 3 4
 		Scanner cin = new Scanner(System.in);
 		
-		int n = cin.nextInt();
+		int n = cin.nextInt();//输入数组大小
 		int data[] = new int[n+1];
 		for(int i = 0 ; i < n; i ++) {
-			data[i] = cin.nextInt();
+			data[i] = cin.nextInt();//循环输入数组中的数组
 		}
 		
 		for(int i = 1 ; i < n; i++) {	//每次加的数进来
