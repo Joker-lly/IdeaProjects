@@ -409,9 +409,6 @@ public class ExcelUtil {
 
 	/**
 	 * 合并单元格
-	 * 
-	 * @param sheet
-	 * @param map中的int[]{firstRow,lastRow,firstCol,lastCol}
 	 *
 	 */
 	public static void mergeExcelCell(HSSFSheet sheet, Map<String, int[]> map) {
