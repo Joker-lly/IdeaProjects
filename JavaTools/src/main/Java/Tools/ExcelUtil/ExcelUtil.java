@@ -344,7 +344,7 @@ public class ExcelUtil {
 	 * @param row
 	 * @param col
 	 * @param colValue
-	 * @author 路新
+
 	 */
 	public static void putCellInMap(Map<String, int[]> map, int row, int col, String colValue) {
 		// 是否需要新增,ture需要，false不需要
@@ -412,7 +412,7 @@ public class ExcelUtil {
 	 * 
 	 * @param sheet
 	 * @param map中的int[]{firstRow,lastRow,firstCol,lastCol}
-	 * @author 路新
+	 *
 	 */
 	public static void mergeExcelCell(HSSFSheet sheet, Map<String, int[]> map) {
 		// 单元格的合并信息，int[]{firstRow,lastRow,firstCol,lastCol}
