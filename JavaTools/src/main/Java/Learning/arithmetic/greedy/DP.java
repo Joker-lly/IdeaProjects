@@ -1,10 +1,14 @@
 package Learning.arithmetic.greedy;
 
+/**
+ * 背包问题（动态规划）
+ *
+ */
 public class DP {
 
 	public static void main(String[] args) {
-		int value[] = {60,100,120};		//每个物品的钱
-		int weight[] = {10,20,40};		//每个物品的重量 和上面的一一对应
+		int value[] = {100,60,120};		//每个物品的钱
+		int weight[] = {20,10,40};		//每个物品的重量 和上面的一一对应
 		
 		int w = 50;	//袋子的容积
 		int n = 3;	//物品的个数
@@ -14,7 +18,8 @@ public class DP {
 			for(int cw = 1; cw <= w; cw ++) {	//袋子在每一个容积下所装的最大的钱
 				if(weight[i - 1] <= cw) {		//表示这个物品可以装
 					dp[i][cw] = Math.max(
-							value[i-1]+dp[i-1][cw-weight[i-1]],		//我装新加的物品
+							value[i-1]+				//我装新加的物品
+									dp[i-1][cw-weight[i-1]],		 //装完新加物品剩余重量可以装的最大价值
 							dp[i-1][cw]		//我不装这个新加的这个物品
 					);
 				}else {
